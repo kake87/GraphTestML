@@ -24,7 +24,7 @@ GraphML Test Repository
 <p>5. Итак, графовое представление создано, мы можем убедится в этом либо перейдя в браузере по адресу: http://localhost:7474/browser/ ![image.png](attachment:image.png) либо делая запросы в ноутбуке</p>
 <p>5.1 Далее показана реализация нескольких запросов</p>
 
-![Screenshot](https://imgur.com/a/cD0Dq54)
+https://imgur.com/a/cD0Dq54
 
 ```MATCH (n:Person) RETURN n.person LIMIT 250```<br>
 ```MATCH (p:Person) WITH p, size((p)--()) as rel_count WHERE rel_count > 1  RETURN p.name,rel_count LIMIT 10000```
@@ -35,6 +35,6 @@ GraphML Test Repository
 <p>В целом вычленения одного элемента имеющего несколько связей уже было реализовано на одном из тестовых запросов выше. Однако нам необходимо промаркировать эту выборку.</p>
 <p>Для чего был использован инструмент <code>SET</code> и был установлен красный цвет (в отличии от дефолтного зелёного).</p>
 
-![Screenshot](https://imgur.com/a/4iYPeqR)
+https://imgur.com/a/4iYPeqR
 
 <p>7. Для проверки результатов в репозитории размещена страница index.html которая принимает аргументы и вносит их в БД. Сервис реализован с помощью библиотеки Flask на Python.</p>
